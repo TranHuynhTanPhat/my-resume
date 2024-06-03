@@ -79,14 +79,15 @@
   margin: 200px 0 0 0;
 }
 /* Clear floats after the columns */
-.row:after {
+.row {
   content: "";
-  display: table;
+  display: flex;
   clear: both;
 }
 .column {
   float: left;
   width: 33.33%;
+  margin-top: auto;
 }
 img {
   width: 100%;
