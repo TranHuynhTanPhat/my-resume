@@ -1,5 +1,12 @@
 <script setup lang="ts">
+import router from "@/router";
+import { onUpdated, ref } from "vue";
 import { RouterLink } from "vue-router";
+
+const routeName = ref();
+onUpdated(()=>{
+  routeName.value = router.currentRoute.value;
+})
 </script>
 
 <template>
@@ -50,14 +57,14 @@ import { RouterLink } from "vue-router";
         <li>
           <RouterLink
             to="/"
-            :class="{ 'nav_links-choosed': $route.matched[0].name == '' }"
+            :class="{ 'nav_links-choosed': routeName == 'about' }"
             >About</RouterLink
           >
         </li>
         <li>
           <RouterLink
             to="/skills"
-            :class="{ 'nav_links-choosed': $route.matched[0].name == 'skills' }"
+            :class="{ 'nav_links-choosed': routeName == 'skills' }"
             >Skills</RouterLink
           >
         </li>
@@ -65,7 +72,7 @@ import { RouterLink } from "vue-router";
           <RouterLink
             to="/experience"
             :class="{
-              'nav_links-choosed': $route.matched[0].name == 'experience',
+              'nav_links-choosed': routeName == 'experience',
             }"
             >Experience</RouterLink
           >
@@ -74,7 +81,7 @@ import { RouterLink } from "vue-router";
           <RouterLink
             to="/contact"
             :class="{
-              'nav_links-choosed': $route.matched[0].name == 'contact',
+              'nav_links-choosed': routeName == 'contact',
             }"
             >Contact</RouterLink
           >
