@@ -48,7 +48,6 @@ import { RouterLink } from "vue-router";
     </div>
     <nav>
       <ul class="nav_links">
-        {{ $route.fullPath }}
         <li>
           <RouterLink
             to="/"
