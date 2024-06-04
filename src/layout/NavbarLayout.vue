@@ -50,7 +50,7 @@ import { RouterLink } from "vue-router";
         <li>
           <RouterLink
             to="/"
-            :class="{ 'nav_links-choosed': $route.matched[0].name == 'about' }"
+            :class="{ 'nav_links-choosed': $route.matched[0].name == '' }"
             >About</RouterLink
           >
         </li>
