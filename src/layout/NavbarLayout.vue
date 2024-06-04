@@ -1,12 +1,6 @@
 <script setup lang="ts">
-import router from "@/router";
-import { onUpdated, ref } from "vue";
 import { RouterLink } from "vue-router";
 
-const routeName = ref();
-onUpdated(()=>{
-  routeName.value = router.currentRoute.value;
-})
 </script>
 
 <template>
@@ -54,17 +48,18 @@ onUpdated(()=>{
     </div>
     <nav>
       <ul class="nav_links">
+        {{ $route.fullPath }}
         <li>
           <RouterLink
             to="/"
-            :class="{ 'nav_links-choosed': routeName == 'about' }"
+            :class="{ 'nav_links-choosed': $route.fullPath == '/' }"
             >About</RouterLink
           >
         </li>
         <li>
           <RouterLink
             to="/skills"
-            :class="{ 'nav_links-choosed': routeName == 'skills' }"
+            :class="{ 'nav_links-choosed': $route.fullPath == '/skills' }"
             >Skills</RouterLink
           >
         </li>
@@ -72,7 +67,7 @@ onUpdated(()=>{
           <RouterLink
             to="/experience"
             :class="{
-              'nav_links-choosed': routeName == 'experience',
+              'nav_links-choosed': $route.fullPath == '/experience',
             }"
             >Experience</RouterLink
           >
@@ -81,7 +76,7 @@ onUpdated(()=>{
           <RouterLink
             to="/contact"
             :class="{
-              'nav_links-choosed': routeName == 'contact',
+              'nav_links-choosed': $route.fullPath == '/contact',
             }"
             >Contact</RouterLink
           >
@@ -99,7 +94,6 @@ onUpdated(()=>{
 }
 li,
 a {
-  
   font-weight: 500;
   font-style: normal;
   font-size: medium;

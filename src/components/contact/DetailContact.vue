@@ -109,10 +109,8 @@
 </template>
 <style scoped>
 .wrapper {
-  
-  
   display: grid;
-  padding: 10% 5%;
+  padding: 10% 5% 30% 5%;
 }
 a {
   font-weight: 500;

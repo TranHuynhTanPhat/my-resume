@@ -3,7 +3,8 @@ import DetailContact from "../components/contact/DetailContact.vue";
 </script>
 
 <template>
-  <main>
+  <main class="main">
     <DetailContact />
   </main>
-</template>
+</template><style scoped>
+</style>
