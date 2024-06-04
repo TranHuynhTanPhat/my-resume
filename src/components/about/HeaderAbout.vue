@@ -9,7 +9,7 @@
       src="@/assets/bg-hero.png"
     />
     <div class="greet">
-      <div class="noto-sans-greet">HELLO, IM PHÁT</div>
+      <div class="noto-sans-greet">HELLO, I'M PHÁT</div>
       <div class="career">frontend/mobile developer</div>
       <div class="summary">
         Senior at HCMC University of Technology and Education – HCMUTE,
@@ -26,9 +26,6 @@
   </div>
 </template>
 <style scoped>
-.wrapper {
-  font-family: "Poppins", sans-serif;
-}
 .background-header {
   width: 100%;
 }
@@ -48,7 +45,7 @@
   font-weight: 500;
 }
 .noto-sans-greet {
-  font-family: "Noto Sans", sans-serif !important;
+  font-family: "Noto Sans" !important;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -61,9 +58,17 @@ button {
   border-radius: 180px;
   border-width: 0px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   margin: 20px 0 0 0;
+  cursor: pointer;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  margin: 20px 10px;
+}
+
+button:hover {
+  transform: scale(1.1, 1.1);
 }
 
 button.hire {

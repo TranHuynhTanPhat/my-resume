@@ -14,8 +14,8 @@
           />
         </div>
         <div class="content">
-            <div class="content-title">mobile application</div>
-            <div class="content-body">build mobile application with flutter</div>
+          <div class="content-title">mobile application</div>
+          <div class="content-body">build mobile application with flutter</div>
         </div>
       </div>
       <div class="column">
@@ -27,8 +27,10 @@
           />
         </div>
         <div class="content">
-            <div class="content-title">web application</div>
-            <div class="content-body">using frameworks like Vuejs, Nuxtjs to program website interface</div>
+          <div class="content-title">web application</div>
+          <div class="content-body">
+            using frameworks like Vuejs, Nuxtjs to program website interface
+          </div>
         </div>
       </div>
       <div class="column">
@@ -40,8 +42,10 @@
           />
         </div>
         <div class="content">
-            <div class="content-title">design figma</div>
-            <div class="content-body">experience using and designing with figma</div>
+          <div class="content-title">design figma</div>
+          <div class="content-body">
+            experience using and designing with figma
+          </div>
         </div>
       </div>
     </div>
@@ -49,11 +53,10 @@
 </template>
 <style scoped>
 .wrapper {
-  font-family: "Poppins", sans-serif;
-  padding: 0 5%;
-  margin: 200px 0 0 0;
+  padding: 200px 5% 5% 5%;
   display: grid;
   gap: 50px;
+  
 }
 .title {
   text-align: center;
@@ -65,6 +68,7 @@
   font-size: 24px;
 }
 .title-2 {
+  color: white;
   font-weight: 600;
   text-transform: capitalize;
   font-size: 36px;
@@ -87,7 +91,7 @@
   height: 150px;
   display: flex;
   align-items: center;
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 80px;
 }
@@ -151,23 +155,26 @@
 .icon-img {
   height: 100px;
 }
-.content{
-    padding: 100px 30px 20px 30px;
-    margin: 80px 0 0 0;
-    border-width: 2px;
-    border-color: black;
-    border-style: solid;
-    border-radius: 0 50px 0 0;
-    height: 250px;
-    display: block;
+.content {
+  padding: 100px 30px 20px 30px;
+  margin: 80px 0 0 0;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 0 50px 0 0;
+  height: 250px;
+  display: block;
 }
-.content-title{
-    font-weight: 600;
-    font-size: 24px;
-    text-transform: capitalize;
+.content-title {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: capitalize;
 }
-.content-body{
-    font-weight: 400;
-    font-size: 18px;
+.content-body {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: justify;
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
     <div class="row">
-      <div class="column">
+      <!-- <div class="column">
         <img alt="increase" src="@/assets/agile.webp" />
-      </div>
+      </div> -->
       <div class="column">
         <img alt="developer" src="@/assets/developer-2.png" />
       </div>
@@ -74,9 +74,9 @@
 </template>
 <style scoped>
 .wrapper {
-  font-family: "Poppins", sans-serif;
-  padding: 0 5%;
-  margin: 200px 0 0 0;
+  
+  padding: 200px 5% 0 5%;
+  
 }
 /* Clear floats after the columns */
 .row {
@@ -86,8 +86,9 @@
 }
 .column {
   float: left;
-  width: 33.33%;
+  width: 50%;
   margin-top: auto;
+  margin-bottom: auto;
 }
 img {
   width: 100%;
@@ -100,16 +101,21 @@ img {
   text-transform: uppercase;
 }
 .header-developer {
+  color: white;
   font-weight: 600;
   font-style: normal;
   font-size: 36px;
   text-transform: uppercase;
 }
 .introduce-developer {
+  color: white;
+
   font-size: 18px;
   text-align: justify;
 }
 .hoppy-title {
+  color: white;
+
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
@@ -120,6 +126,8 @@ img {
   gap: 20px;
 }
 .hoppy p {
+  color: white;
+
   font-weight: 600;
   font-size: 18px;
 }

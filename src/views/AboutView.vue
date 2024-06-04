@@ -1,15 +1,16 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<script setup>
+import HeaderAbout from "../components/about/HeaderAbout.vue";
+import IntroduceAbout from "../components/about/IntroduceAbout.vue";
+import SpecializingAbout from "../components/about/SpecializingAbout.vue";
+</script>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
+<template>
+  <main>
+    <HeaderAbout />
+    <IntroduceAbout />
+    <SpecializingAbout />
+  </main>
+</template>
+<style scoped>
+
 </style>

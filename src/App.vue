@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+// import { RouterLink, RouterView } from "vue-router";
 import NavbarLayout from "./layout/NavbarLayout.vue";
 import FooterLayout from "./layout/FooterLayout.vue"
 </script>
@@ -25,10 +25,12 @@ import FooterLayout from "./layout/FooterLayout.vue"
 </template>
 
 <style scoped>
-* {
+body {
+  color: white;
+}
+*{
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  background: #121212;
 }
 /* header {
   line-height: 1.5;
