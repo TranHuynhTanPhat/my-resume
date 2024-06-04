@@ -159,7 +159,7 @@
   padding: 100px 30px 20px 30px;
   margin: 80px 0 0 0;
   border-width: 2px;
-  border-color: black;
+  border-color: white;
   border-style: solid;
   border-radius: 0 50px 0 0;
   height: 250px;
