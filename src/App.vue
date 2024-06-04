@@ -1,26 +1,11 @@
 <script setup>
-// import { RouterLink, RouterView } from "vue-router";
 import NavbarLayout from "./layout/NavbarLayout.vue";
-import FooterLayout from "./layout/FooterLayout.vue"
 </script>
 
 <template>
-  <!-- <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header> -->
   <section>
     <NavbarLayout />
     <RouterView />
-    <FooterLayout/>
   </section>
 </template>
 
@@ -28,7 +13,7 @@ import FooterLayout from "./layout/FooterLayout.vue"
 body {
   color: white;
 }
-*{
+* {
   font-family: "Poppins", sans-serif;
   background: #121212;
 }
